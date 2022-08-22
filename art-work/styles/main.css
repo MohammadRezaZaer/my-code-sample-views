@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --swiper-pagination-bullet-inactive-color:#ffffff00
+    }
+
+    html {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+        @apply font-body;
+        line-height: 1.5em;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-heading;
+    }
+
+    a {
+        @apply no-underline;
+    }
+}
+
+
+
+@layer utilities {
+    .pb-safe {
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+    .list-interpunct > li:before {
+        content: '・';
+        float: left;
+        margin: 0 0 0 -0.9em;
+        width: 0.9em;
+    }
+
+    @media (min-width: 992px) {
+        .list-interpunct > li:before {
+            margin: 0 0 0 -1.5em;
+            width: 1.5em;
+        }
+    }
+}
+@import './custom-plugins.css';

@@ -1,0 +1,7 @@
+{
+  "build": {
+    "env": {
+      "NEXT_PUBLIC_REST_API_ENDPOINT": "https://api.idiomaticenglish.ir/api/v1/"
+    }
+  }
+}

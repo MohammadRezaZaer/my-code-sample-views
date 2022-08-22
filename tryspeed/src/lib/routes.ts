@@ -1,0 +1,16 @@
+export const ROUTES = {
+  HOME: '/',
+  PROFILE: '/profile',
+  CHANGE_PASSWORD: '/change-password',
+  HELP: '/help',
+  LOGOUT: '/logout',
+  PRIVACY: '/privacy',
+  TERMS: '/terms',
+  CONTACT: '/contact',
+  RESULT_HISTORY: '/result-history',
+  ABOUT_US: "/about",
+  Android: "/android",
+  Apple: "/ios",
+  APPS: "/apps",
+  TwitterShare:"https://twitter.com/intent/tweet?hashtags=speedtest&original_referer=https%3A%2F%2Fwww.trymyspeed.com%2F&related=Cfbtel%3A%20Creators%20of%20Trymyspeed.com&text=Check%20out%20my%20%40Speedtest%20result!%20How%20fast%20is%20your%20internet%3F&url=https%3A%2F%2Fwww.client.trymyspeed.com%2Fresults%2F?id=",
+};

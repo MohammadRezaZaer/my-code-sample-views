@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+
+    color-scheme: dark;
+
+    --primary-light: #8abdff;
+    --primary: #6d5dfc;
+    --primary-dark: #5b0eeb;
+    --dark: #1B1934;
+    --greyLight-1: #E4EBF5;
+    --greyLight-2: #2c236b;
+    --greyLight-3: #bec8e4;
+    --greyDark: #9baacf;
+    /*
+    *
+    * This all are the rgb values which are used inside the
+    * tailwind config file and custom plugins css file
+    *
+    */
+    --color-nav-dark:  1, 0, 17;
+
+    /*
+    * primary color
+    */
+    --color-accent: 133,18,173;
+
+    /*
+    * Hover state color of primary color
+    */
+    --color-accent-hover: 86,54,179;
+
+    /*
+    * shade of primary color
+    */
+    --color-accent-300: 153, 217, 204;
+
+    /*
+    * shade of primary color
+    */
+    --color-accent-400: 77, 188, 165;
+
+    /*
+    * shade of primary color
+    */
+    --color-accent-500: 0, 159, 127;
+
+    /*
+    * shade of primary color
+    */
+    --color-accent-600: 0, 143, 114;
+
+    /*
+    * shade of primary color
+    */
+    --color-accent-700: 0, 119, 95;
+
+    /*
+    * light color
+    */
+    --color-light: 207, 206, 207;
+    --color-light2: 254, 255, 255;
+
+    /*
+    * dark color
+    */
+    --color-dark: 27, 25, 52;
+
+    /*
+    * Black muted color
+    */
+    --color-muted-black: 17, 17, 17;
+
+/****/
+  }
+
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply font-body;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
+
+  a {
+    @apply no-underline;
+  }
+}
+@import './custom-plugins.css';
